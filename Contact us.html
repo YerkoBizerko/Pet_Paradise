@@ -24,7 +24,7 @@
             <!-- place navbar here -->
             <nav class="navbar navbar-expand-md bg-body-tertiary">
                 <div class="container-fluid my-3">
-                  <a class="navbar-brand ms-3" href="#"><img src="../Images/PetParadise_logo.png" class="img-fluid" width="50" height="50"></a>
+                  <a class="navbar-brand ms-3" href="#"><img src="../Images/PetParadise_logo.png" class="img-fluid" width="50" height="50" alt="Pet Paradise Logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -75,22 +75,23 @@
                 </div>
 
                   <div>
-                    <label for="exampleInputName" class="form-label mt-4">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName" aria-describedby="NameBox" placeholder="Enter Name">
+                    <label for="InputName" class="form-label mt-4">Name</label>
+                    <input type="text" class="form-control" id="InputName" aria-describedby="NameBox" placeholder="Enter Name" autocomplete="given-name">
+                  </div>
+
+                  <div>
+                    <label for="EmailBox" class="form-label mt-4">Email</label>
+                    <input type="email" class="form-control" id="EmailBox" placeholder="Enter Email" autocomplete="email">
                     <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                   </div>
+
                   <div>
-                    <label class="form-label mt-4">Email</label>
-                    <input type="email" class="form-control" id="EmailBox" placeholder="Enter Email" autocomplete="off">
+                    <label for="Subject" class="form-label mt-4">Subject</label>
+                    <input type="text" class="form-control" id="Subject" placeholder="Enter Subject" autocomplete="off">
                   </div>
 
                   <div>
-                    <label class="form-label mt-4">Subject</label>
-                    <input type="text" class="form-control" id="SubjectMatter" placeholder="Enter Subject" autocomplete="off">
-                  </div>
-
-                  <div>
-                    <label for="exampleTextarea" class="form-label mt-4">Your message</label>
+                    <label for="YourMessage" class="form-label mt-4">Your message</label>
                     <textarea class="form-control" id="SubjectMessageBox" rows="3"></textarea>
                   </div>
 
@@ -123,18 +124,18 @@
             background-image: url('../Images/pawprint\ footer.png');
             background-size: fill;
             height: 220px;">
-            <btn type="button" href="www.petparadise.com"><img src="../Images/PetParadise_logo.png" class="img-fluid" width="70" height="50"></btn>
+            <btn type="button" href="www.petparadise.com"><img src="../Images/PetParadise_logo.png" class="img-fluid" width="70" height="50" alt="Pet Paradise Logo"></btn>
             <div class="text-center mb-5">
               <a href="https://www.facebook.com" target="_blank"><btn type="button" class="text-black me-4" style="font-size: 3rem">
-                <i class="bi bi-facebook"></i>
+                <i class="bi bi-facebook"><span class="visually-hidden">Facebook Icon</span></i>
               </a>
               </btn>
               <a href="https://www.instagram.com/" target="_blank"><btn type="button" class="text-black me-4" style="font-size: 3rem">
-                <i class="bi bi-instagram"></i>
+                <i class="bi bi-instagram"><span class="visually-hidden">Instagram Icon</span></i>
               </a>
               </btn>
               <a href="https://x.com/?lang=en" target="_blank"><btn type="button" class="text-black" style="font-size: 3rem">
-                <i class="bi bi-twitter"></i>
+                <i class="bi bi-twitter"><span class="visually-hidden">Twitter Icon</span></i>
               </a>
               </btn>
             </div>
