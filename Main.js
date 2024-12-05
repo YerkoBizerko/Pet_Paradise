@@ -58,7 +58,7 @@ let ListProducts = [{
 }
 ];
 
-let basket = [];
+let basket = JSON.parse(localStorage.getItem("SavedCart")) || [];
 
 let AddDataWebsite = () => {
     return (ListProduct.innerHTML = ListProducts
@@ -95,6 +95,7 @@ let AddCart = (id) => {
   else {
     search.item +=1
   }
+  localStorage.setItem("SavedCart", JSON.stringify(basket));
   CartCalculation();
 };
 
@@ -102,3 +103,5 @@ let CartCalculation = () => {
   let CartCounter = document.getElementById("CartAmount");
   CartCounter.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0)
 }
+
+CartCalculation();
