@@ -52,7 +52,7 @@
                       </i>
                       </a>
                       </btn>
-                      <span class="translate-middle badge rounded-pill bg-danger me-5">
+                      <span id="CartAmount" class="translate-middle badge rounded-pill bg-danger me-5">
                         0
                       </span>
                     </div>
@@ -63,7 +63,7 @@
 
         <main>
             <!-- Shopping cart menu screen -->
-            <section class="">
+            <!--<section class="">
                 <div class="container py-5">
                     <div class="col-12">
                       <div class="card">
@@ -74,10 +74,13 @@
                                 <div class="d-flex justify-content-between align-items-center mb-5">
                                   <h1 class="fw-bold mb-0">Shopping Cart</h1>
                                   <h6 class="mb-0 text-muted">1 items</h6>
-                                </div>
+                                </div>-->
 
                                 <!-- Item card description -->
-                              <div class="CardUpdate">
+                               <div class="ProductSummary">
+                                
+                               </div>
+                                <!--
                                 <div class="card mb-4 border-0">
                                     <div class="card-body">
                                       <div class="row d-flex justify-content-between align-items-center">
@@ -94,7 +97,7 @@
                                             <h5 class="mb-sm-4 mb-md-2">$44.00</h5>
                                           </div>
 
-                                        <!-- Buttons to control item amount -->
+                                        !-- Buttons to control item amount --
                                         <div class="col-md-2 col-lg-3 col-xl-3 d-flex mb-1">
                                           <button class="btn btn-link px-0"
                                             onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
@@ -110,17 +113,18 @@
                                           </button>
                                         </div>
 
-                                        <!-- trash feature -->
+                                        !-- trash feature --
                                         <div class="col-md-1 col-lg-1 col-xl-1 text-end mb-1 mt-md-0 mt-sm-3">
                                           <a href="#" class="text-danger"><i class="bi bi-trash-fill fs-5"></i></a>
                                         </div>
                                       </div>
                                     </div>
                                 </div>
-                              </div>
-                                <hr class="my-4">
+                                <hr class="my-4">-->
+                              <!--OLD PRODUCT SUMMARY DIV</div>-->
+                                
 
-                                <div class="pt-5">
+                               <!-- <div class="pt-5">
                                   <h6 class="mb-0"><a href="./Shop.html" class="text-body">
                                     <i class="bi bi-arrow-left me-2"></i>Back to shop</a>
                                   </h6>
@@ -157,7 +161,7 @@
               
                                 <hr class="my-4">
               
-                                <div class="d-flex justify-content-between mb-5">
+                                <div id="PriceSummary" class="d-flex justify-content-between mb-5">
                                   <h5 class="text-uppercase">Total price</h5>
                                   <h5>$44.00</h5>
                                 </div>
@@ -171,7 +175,7 @@
                       </div>
                     </div>
                 </div>
-              </section>
+              </section>-->
         </main>
         <footer class="text-center">
             <!-- place footer here -->
@@ -218,7 +222,7 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
-        <script src="./Main.js"></script>
-        <script src="./Cart.JS"></script>
+        <script src="./CartData.js"></script>
+        <script src="./Cart.js"></script>
     </body>
 </html>
