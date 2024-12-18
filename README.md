@@ -12,7 +12,7 @@ the key-aspects of a traditional e-commerce site and its functions. Prior to com
 
 # 🚀 **Tech Stack**
 
-I built this site all the way from a boilerplate to an (almost) fully funcitonal e-commerce store as a way to display, test and improve my skillset with web development tools, languages and frameworks.
+I built this site all the way from a boilerplate to an (almost, see Future Scope below) fully functional e-commerce store as a way to display, test and improve my skillset with web development tools, languages and frameworks.
 
 I utilized ***HTML*** to build the overall skeleton of every component/page; with ***CSS*** to further customise and style individual elements contained therein. The ***Bootstrap*** framework provided me with the tools to make it responsive to all viewports (Mobile or larger).
 
