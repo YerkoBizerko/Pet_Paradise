@@ -6,9 +6,10 @@ The vision of this site was to design a webstore where customers can easily navi
 the key-aspects of a traditional e-commerce site and its functions. Prior to commencing this project, I had some business-rules laid out to simulate a real-world scenario for development:
 
 1. Design must adhere to core design principles (Spacing, Sizing, White-space, eye-pathways)
-2. Include a navigation bar for user-friendly traversal
-3. Include a functioning shop where customers can add to their cart and adjust accordingly
-4. Design an eye-catching but functional blog page
+2. Ensure pages are responsive to all viewports
+3. Include a navigation bar for user-friendly traversal
+4. Include a functioning shop where customers can add to their cart and adjust accordingly
+5. Design an eye-catching but functional blog page
 
 # 🚀 **Tech Stack**
 
@@ -26,3 +27,8 @@ I utilized ***HTML*** to build the overall skeleton of every component/page; wit
 - Add Discount modal with code to Index.html to create purpose for "Discount" feature in Cart.html
 - Create subtotal function (COMPLETED)
 - Add pagination to Shop.html
+
+# ✍️ **Relevant documentation**
+1. Link to original Figma designs (Wireframes & Mock-ups) NOTE: These designs were to get the initial design rolling, the contents of the launched version is mostly trial & error. Also used to demonstrate experience with the figma platform. Other examples can be demonstrated personally.
+   
+   https://www.figma.com/design/8XThTIGriMIpjnfAGRM8Xg/Pet-Paradise-wireframe?node-id=0-1&t=KhdObgPZrnpViElD-1
