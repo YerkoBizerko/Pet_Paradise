@@ -96,7 +96,7 @@ let basket = JSON.parse(localStorage.getItem("SavedCart")) || [];
                             <div class="card mb-4 border-0">
                                 <div class="card-body">
                                   <div class="row d-flex justify-content-between align-items-center col-md-4 col-sm-6">
-                                  <img src="./Images/undraw_empty_cart_co35.svg">
+                                  <img src="./images/undraw_empty_cart_co35.svg">
                                   </div>
                                   <h1 class="text-black mt-5">Cart is empty</h1>
                                 </div>
