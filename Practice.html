@@ -20,67 +20,114 @@
 
     <body>
         <header>
-            <!-- place navbar here -->
-            <!--<nav class="navbar navbar-expand-md navbar-light bg-light">
-                <div class="container-fluid">
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                  <div class="d-flex">
-                  <img src="/images/PetParadise_logo.png" class="img-responsive justify-content-center" width="50" height="50">
-                  </div>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="justify-content-end navbar-nav me-1  mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                      </li>
-                    </ul>
+          CODE FOR CART.JS PRODUCTS
+          <section class="">
+            <div class="container py-5">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body p-0">
+                      <div class="row g-0">
+                        <div class="col-lg-8">
+                          <div class="p-5">
+                            <div class="d-flex justify-content-between align-items-center mb-5">
+                              <h1 class="fw-bold mb-0">Shopping Cart</h1>
+                              <h6 class="mb-0 text-muted">${item} items</h6>
+                            </div>
+
+                            
+                        <div class="card mb-4 border-0">
+                            <div class="card-body">
+                              <div class="row d-flex justify-content-between align-items-center">
+                                <div class="mb-3 mb-sm-0 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                                  <a href="Shop.html"><img
+                                    src=${search.image}
+                                    class="img-fluid rounded-3"></a>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                                  <p class="mt-md-1 mt-sm-3 lead">${search.name}</p>
+                                </div>
+
+                                <div class="mb-3 mb-sm-0 col-sm-12 col-md-2 col-lg-2 col-xl-2 offset-lg-1">
+                                    <h5 class="mb-sm-4 mb-md-2">$${search.price}</h5>
+                                  </div>
+
+
+                                <div class="mb-md-1 col-md-2 col-lg-3 col-xl-3 d-flex mb-4">
+                                  <button class="btn btn-link px-0">
+                                    <i class="bi bi-dash" onclick="decrement(${id})"></i>
+                                  </button>
+                  
+                                  <span id="${id}" class="d-flex border align-items-center ps-3" style="width: 100%;">${item}</span>
+                  
+                                  <button class="btn btn-link px-0">
+                                    <i class="bi bi-plus" onclick="increment(${id})"></i>
+                                  </button>
+                                </div>
+
+
+                                <div class="col-md-1 col-lg-1 col-xl-1 text-end mb-1 mt-md-0 mt-sm-3">
+                                  <a href="#" class="text-danger"><i class="bi bi-trash-fill fs-5" onclick="RemoveFromCart(${id})"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <hr class="my-4"></hr>
+                            
+
+                            <div class="pt-5">
+                              <h6 class="mb-0"><a href="./Shop.html" class="text-body">
+                                <i class="bi bi-arrow-left me-2"></i>Back to shop</a>
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        
+                        <div class="col-lg-4 bg-body-tertiary">
+                          <div class="p-5">
+                            <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                            <hr class="my-4">
+          
+                            <div class="d-flex justify-content-between mb-4">
+                              <h5 class="mb-4">Items: ${item}</h5>
+                              <h5>$${Math.round(item * search.price)}.00</h5>
+                            </div>
+                
+
+                            <h5 class="mb-3">Shipping</h5>
+          
+                            <div class="mb-4 pb-2">
+                              <select>
+                                <option value="1">Delivery (Standard) - $5.00</option>
+                                <option value="2">Delivery (Express) - $10.00</option>
+                                <option value="3">Delivery (Rural) - $12.00</option>
+                              </select>
+                            </div>
+          
+                            <h5 class="mb-3">Discount code</h5>
+          
+                            <div class="mb-5">
+                                <input type="text" id="form3Examplea2" class="form-control form-control-lg" placeholder="Enter your code" />
+                            </div>
+          
+                            <hr class="my-4">
+          
+                            <div id="PriceSummary" class="d-flex justify-content-between mb-5">
+                              <h5 class="text-uppercase">Total price</h5>
+                              <h5>$${Math.round(item * search.price)}.00</h5>
+                            </div>
+          
+                            <button type="button" class="btn btn-danger btn-lg">Place Order</button>
+          
+                          </div>
+                        </div>
+                      
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </nav>-->
-              <nav class="navbar navbar-expand-md bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand ms-3" href="#"><img src="\images\PetParadise_logo.png" class="img-fluid" width="50" height="50"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarColor04">
-                    <ul class="navbar-nav me-auto">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Home
-                          <span class="visually-hidden">(current)</span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-sm-2" type="search" placeholder="Search">
-                      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
+            </div>
+          </section>
         </header>
         <main></main>
         <footer>

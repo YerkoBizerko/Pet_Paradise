@@ -15,7 +15,8 @@ let AddDataWebsite = () => {
               <p class="card-text fs-5">$${price}</p>
               <p class="card-text fw-light fs-5">${desc}</p>
               <div class="d-flex justify-content-center mt-4">
-                <button type="button" class="btn btn-danger my-2" onclick="AddCart(${id})">Add to cart</button>
+                <button type="button" class="toastbtn btn btn-danger my-2" onclick="AddCart(${id})">Add to cart</button>
+
               </div>
             </div>
           </div>
@@ -47,3 +48,15 @@ let CartCalculation = () => {
 };
 
 CartCalculation();
+
+let toastTriggers = document.querySelectorAll(".toastbtn");
+let toastLiveExample = document.getElementById('liveToast');
+
+toastTriggers.forEach((toastTrigger) => {
+    if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show();
+        });
+    }
+});
