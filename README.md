@@ -32,3 +32,7 @@ I utilised ***HTML*** to build the overall skeleton of every component/page; wit
 1. Link to original Figma designs (Wireframes & Mock-ups) NOTE: These designs were to get the initial design rolling, the contents of the launched version is mostly trial & error. Also used to demonstrate experience with the figma platform. Other examples can be demonstrated personally.
    
    https://www.figma.com/design/8XThTIGriMIpjnfAGRM8Xg/Pet-Paradise-wireframe?node-id=0-1&t=KhdObgPZrnpViElD-1
+
+2. Link to deployed website via Github Pages:
+
+   https://yerkobizerko.github.io/Pet_Paradise/
