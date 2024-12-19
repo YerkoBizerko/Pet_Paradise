@@ -24,7 +24,7 @@ I utilised ***HTML*** to build the overall skeleton of every component/page; wit
 - Toast to notify the user it has been added to the cart (COMPLETED)
 - Change product data to remove duplicates (COMPLETED)
 - Add shipping options that reflect in the checkout total
-- Add Discount modal with code to Index.html to create purpose for "Discount" feature in Cart.html
+- Add modal with discount code to Index.html to create purpose for "Discount" feature in Cart.html
 - Create subtotal function (COMPLETED)
 - Add pagination to Shop.html
 
